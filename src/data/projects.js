@@ -27,6 +27,7 @@ export const projects = [
     image: "/images/projects/Stagepost.png",
     size: "xl",
     fit: "cover",
+    link: "https://www.behance.net/gallery/245657521/GDG-DSU-Social-Media-Series"
   },
   {
     id: "p02",
@@ -37,6 +38,7 @@ export const projects = [
     image: "/images/projects/Buildwithai.png",
     size: "sm",
     fit: "cover",
+    link: "https://www.behance.net/gallery/249416939/Build-with-AI-Event-Branding-Visual-Identity"
   },
   {
     id: "p03",
@@ -47,6 +49,7 @@ export const projects = [
     image: "/images/projects/Techarena.png",
     size: "sm",
     fit: "cover",
+    link:"https://www.behance.net/gallery/245656975/Tech-Arena-2025-Event-Design-GDG-on-Campus-DSU"
   },
   {
     id: "p04",
@@ -57,6 +60,7 @@ export const projects = [
     image: "/images/projects/NOORBANO.png",
     size: "md",
     fit: "cover",
+    link: "https://www.behance.net/gallery/249111039/Noor-Bano-Jewelry-AI-Enhanced-Product-Presentation"
   },
   {
     id: "p05",
@@ -67,5 +71,6 @@ export const projects = [
     image: "/images/projects/Mobile banner nutty bliss.png",
     size: "xl",
     fit: "cover",
+    link: "https://www.behance.net/gallery/249110397/NuttyBliss-Peanut-Butter-Packaging-Design"
   },
 ];

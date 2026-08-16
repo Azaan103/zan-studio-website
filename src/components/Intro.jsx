@@ -55,7 +55,7 @@ export default function Intro() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.5 }}
           >
-            Design Studio
+            Loading...
           </motion.span>
 
           <motion.h1
