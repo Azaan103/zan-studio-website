@@ -17,7 +17,7 @@ const SERVICES = [
   {
     n: "03",
     title: "Social Design",
-    copy: "Content built to communicate a message — not just fill a feed slot.",
+    copy: "Content built to communicate a message not just fill a feed slot.",
     color: "var(--ticket-orange)",
   },
   {
@@ -29,7 +29,7 @@ const SERVICES = [
   {
     n: "05",
     title: "Digital Experiences",
-    copy: "Small, considered web experiences — like this one — for brands worth remembering.",
+    copy: "Small, considered web experiences like this one for brands worth remembering.",
     color: "var(--white)",
   },
 ];
