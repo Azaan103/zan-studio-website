@@ -21,7 +21,7 @@ export const projects = [
   {
     id: "p01",
     title: "GDG-DSU",
-    category: "Google Developers Group design",
+    category: "Social Design",
     description:
       "Logomark and visual system for a luxury clothing label — built around a single confident Z monogram.",
     image: "/images/projects/Stagepost.png",
@@ -31,8 +31,8 @@ export const projects = [
   },
   {
     id: "p02",
-    title: "SZ Services",
-    category: "Social / Campaign",
+    title: "Build with AI",
+    category: "Event Branding",
     description:
       "Eid campaign and everyday content system for an appliance repair brand — before/after posts, offers, technician branding.",
     image: "/images/projects/Buildwithai.png",
@@ -42,19 +42,19 @@ export const projects = [
   },
   {
     id: "p03",
-    title: "Noorbano",
-    category: "Product Photography",
+    title: "Tech Arena",
+    category: "Event Design",
     description:
       "Editorial jewelry photography direction — antique gold pieces styled against dark navy and velvet.",
     image: "/images/projects/Techarena.png",
     size: "sm",
     fit: "cover",
-    link:"https://www.behance.net/gallery/245656975/Tech-Arena-2025-Event-Design-GDG-on-Campus-DSU"
+    link: "https://www.behance.net/gallery/245656975/Tech-Arena-2025-Event-Design-GDG-on-Campus-DSU"
   },
   {
     id: "p04",
-    title: "Organic Inn",
-    category: "Packaging",
+    title: "Noor Bano",
+    category: "Product Design",
     description:
       "Packaging and shelf presence for a peanut butter brand built on an honest, unprocessed story.",
     image: "/images/projects/NOORBANO.png",
@@ -64,8 +64,8 @@ export const projects = [
   },
   {
     id: "p05",
-    title: "Talktonic Learning",
-    category: "UI/UX",
+    title: "NuttyBliss",
+    category: "Packaging",
     description:
       "Interface direction for a learning academy's booking and course experience.",
     image: "/images/projects/Mobile banner nutty bliss.png",

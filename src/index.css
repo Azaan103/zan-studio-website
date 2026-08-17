@@ -81,6 +81,9 @@ button {
 h1, h2, h3, h4, p {
   margin: 0;
 }
+.ticket {
+  color: var(--black);
+}
 
 ::selection {
   background: var(--blue);
@@ -195,29 +198,42 @@ h1, h2, h3, h4, p {
 
 /* ---------- marquee ticker ---------- */
 .marquee {
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   background: var(--black);
 }
+
 .marquee__track {
   display: inline-flex;
-  animation: marquee 22s linear infinite;
+  width: max-content;
+  animation: marquee 300s linear infinite;
+  will-change: transform;
 }
+
 .marquee__track span {
+  flex-shrink: 0;
   padding: 16px 28px;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--ticket-green);
 }
+
 .marquee__track span.accent {
-  color: var(--blue);
+  color: var(--ticket-tan);
 }
+
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /* ---------- smart image / placeholder ---------- */
@@ -785,7 +801,7 @@ h1, h2, h3, h4, p {
 }
 .services__eyebrow {
   font-size: 15px;
-  color: var(--blue);
+  color: var(--white);
 }
 .services__cursor {
   font-family: var(--font-display);
@@ -836,7 +852,7 @@ h1, h2, h3, h4, p {
   align-items: center;
   gap: 6px;
   font-size: 20px;
-  color: var(--blue);
+  color: var(--white);
   transition: color 0.2s ease;
 }
 .services__row.is-active .services__row-index {

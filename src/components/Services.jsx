@@ -30,7 +30,7 @@ const SERVICES = [
     n: "05",
     title: "Digital Experiences",
     copy: "Small, considered web experiences — like this one — for brands worth remembering.",
-    color: "var(--blue)",
+    color: "var(--white)",
   },
 ];
 

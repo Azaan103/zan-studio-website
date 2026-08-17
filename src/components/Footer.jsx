@@ -3,7 +3,7 @@ const ITEMS = ["Azaan Rahim", "Zan Studio", "Let's Create"];
 function Track() {
   return (
     <span className="marquee__track">
-      {[...ITEMS, ...ITEMS].map((item, i) => (
+      {[...ITEMS, ...ITEMS, ...ITEMS, ...ITEMS, ...ITEMS, ...ITEMS, ...ITEMS, ...ITEMS].map((item, i) => (
         <span key={i} className={i % 2 === 1 ? "accent" : ""}>
           * {item}
         </span>

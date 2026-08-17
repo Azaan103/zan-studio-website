@@ -3,12 +3,11 @@ import SmartImage from "./SmartImage";
 import TornEdge from "./TornEdge";
 
 const TICKETS = [
-  { label: "UI/UX", color: "var(--ticket-pink)", rotate: -6 },
-  { label: "Branding", color: "var(--ticket-tan)", rotate: 4 },
-  { label: "Social", color: "var(--ticket-green)", rotate: -3 },
-  { label: "Packaging", color: "var(--ticket-orange)", rotate: 5 },
+  { label: "UI/UX", color: "var(--ticket-pink)", labelColor: "var(--black)", rotate: -6 },
+  { label: "Branding", color: "var(--ticket-tan)", labelColor: "var(--black)", rotate: 4 },
+  { label: "Social", color: "var(--ticket-green)", labelColor: "var(--black)", rotate: -3 },
+  { label: "Packaging", color: "var(--ticket-orange)", labelColor: "var(--black)", rotate: 5 },
 ];
-
 export default function Hero() {
   return (
     <section id="top" className="hero">
@@ -57,7 +56,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.28 }}
             >
               A one-person studio building UI/UX, brand identity and social
-              design for founders who'd rather stand out than fit in.
+              design for brands & founders who'd rather stand out than fit in.
             </motion.p>
 
             <motion.div

@@ -23,7 +23,7 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0, rotate: i % 2 ? 2 : -2 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.09 }}
-              whileHover={{ rotate: 0, y: -6 }}
+              whileHover={{ rotate: 0, y: -10 }}
             >
               <span className="process__n pixel">{s.n}</span>
               <h3 className="process__label">{s.label}</h3>

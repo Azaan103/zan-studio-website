@@ -14,18 +14,13 @@ export default function About() {
 
           <p className="about__lead">
             ZAN Studio is a one-person design practice, run by{" "}
-            <strong>Azaan Rahim</strong> — built on the belief that most
+            <strong>Azaan Rahim</strong> built on the belief that most
             brands don't fail from a lack of content, they fail from a lack
             of a point of view.
           </p>
 
           <p className="about__body">
-            I sit at the intersection of design and code: a computer science
-            background that keeps the work grounded in how things actually
-            get built, and a design practice — UI/UX, branding, social —
-            that keeps it worth looking at. Every project starts as a
-            problem, not a template.
-          </p>
+Make it useful. Make it beautiful. Make it yours. From brand identities to interfaces and digital experiences, ZAN STUDIO turns problems into design that feels distinct, intentional, and built to last.          </p>
         </motion.div>
 
         <motion.div

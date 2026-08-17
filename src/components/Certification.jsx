@@ -18,8 +18,8 @@ export default function Certification() {
             UX Designer.
           </h2>
           <p className="cert__copy">
-            Trained on real product problems — research, wireframes,
-            prototyping and usability testing — through Google's UX Design
+            Trained on real product problems research, wireframes,
+            prototyping and usability testing through Google's UX Design
             program. It's the foundation the studio's UI/UX work sits on.
           </p>
         </motion.div>

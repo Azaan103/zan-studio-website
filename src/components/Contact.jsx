@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 
 // ---- Replace with your real details ----
 const CONTACT = {
-  email: "hello@zanstudio.com",
-  phone: "+92 3XX XXXXXXX",
-  linkedin: "https://linkedin.com/in/your-handle",
-  instagram: "https://instagram.com/your-handle",
+  email: "hello@zanstudio.co",
+  phone: "+92 331 6677011",
+  linkedin: "https://www.linkedin.com/company/zan-studioo",
+  instagram: "https://www.instagram.com/zan.studio.co/",
 };
 
 const LINKS = [
   { label: "Email", value: CONTACT.email, href: `mailto:${CONTACT.email}`, color: "var(--ticket-green)" },
   { label: "Phone", value: CONTACT.phone, href: `tel:${CONTACT.phone.replace(/\s/g, "")}`, color: "var(--ticket-tan)" },
-  { label: "LinkedIn", value: "in/your-handle", href: CONTACT.linkedin, color: "var(--ticket-pink)" },
-  { label: "Instagram", value: "@your-handle", href: CONTACT.instagram, color: "var(--ticket-orange)" },
+  { label: "LinkedIn", value: "ZAN STUDIO", href: CONTACT.linkedin, color: "var(--ticket-pink)" },
+  { label: "Instagram", value: "@zan.studio.co", href: CONTACT.instagram, color: "var(--ticket-orange)" },
 ];
 
 export default function Contact() {
