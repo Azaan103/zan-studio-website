@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const sampleNotes = [
-  { id: "note-01", quote: "The first draft already felt like the idea in my head — just sharper and more considered.", name: "Your client here", role: "Founder", company: "Startup name", project: "Brand identity", tone: "pink" },
-  { id: "note-02", quote: "Clear communication, thoughtful details, and a result that feels like us.", name: "Your client here", role: "Project lead", company: "Company name", project: "Digital design", tone: "green" },
-  { id: "note-03", quote: "Everything felt connected, from the big visual idea down to the smallest touchpoint.", name: "Your client here", role: "Client", company: "Brand name", project: "Campaign visuals", tone: "cream" },
-  { id: "note-04", quote: "A smooth process, plenty of care, and creative choices that actually had a reason behind them.", name: "Your client here", role: "Founder", company: "Business name", project: "Website design", tone: "orange" },
-  { id: "note-05", quote: "It felt collaborative from the start. The final work was playful, polished, and ready to use.", name: "Your client here", role: "Team member", company: "Organization", project: "Brand touchpoints", tone: "blue" },
+  { id: "note-01", quote: ".< , very chat pati and tea (T_T) memories best of luck for everything may your clients bother you less for designs", name: "Community Member", role: "Community", company: "GDG-DSU", project: "Designer", tone: "pink" },
+  { id: "note-02", quote: "ZAN STUDIO understood our vision and brought OnScene to life across every touchpoint from business cards and event branding to our QR holder and app store screenshots. Everything felt consistent, modern, energetic, and unmistakably OnScene. We loved how it all came together.", name: "Muhammad Samee", role: "Founder", company: "OnScene", project: "Brand Design · Print", tone: "pink" },
+  { id: "note-03", quote: "We really liked the UI concept ZAN STUDIO created for Kaqaz Qalam. We wanted something playful and funky that matched our stationery and toys, and the design captured that really well. It feels fun, colourful, and true to what we had in mind.", name: "Hussain", role: "Web Developer", company: "Kagaz Qalam", project: "UI-UX Design", tone: "green" },
+  { id: "note-04", quote: "We’re really happy with the card ZAN STUDIO designed for us. They understood what we wanted and made it look clean and professional. We’re also looking forward to working with them on our website and other designs.", name: "Rahim Rajab Ali", role: "Director", company: "Al Zehra Diagnostic Center", project: "Brand Design · Print", tone: "cream" },
+  { id: "note-05", quote: "I wanted a brand identity with the fun, playful energy of Duolingo, but something that still felt unique to my brand. ZAN Studio understood the direction right away and translated the idea into an identity that felt cohesive, distinctive, and full of personality.", name: "Saad Jangda", role: "Founder", company: "Subjectify", project: "Brand Identity", tone: "orange" },
+  { id: "note-06", quote: "It felt collaborative from the start. The final work was playful, polished, and ready to use.", name: "Shayan", role: "Founder", company: "Nutty Bliss", project: "Physical touchpoints", tone: "blue" },
 ];
 
 export default function Reviews() {

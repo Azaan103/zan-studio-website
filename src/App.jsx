@@ -1,14 +1,17 @@
 import Intro from "./components/Intro";
 import OSBar from "./components/OSBar";
 import FloatingNav from "./components/FloatingNav";
+import Availability from "./components/Availability";
 import Hero from "./components/Hero";
-import PacmanDivider from "./components/PacmanDivider";
-import Certification from "./components/Certification";
-import About from "./components/About";
+import SocialProof from "./components/SocialProof";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Process from "./components/Process";
-import Contact from "./components/Contact";
+import About from "./components/About";
+import Reviews from "./components/Reviews";
+import Packages from "./components/Packages";
+import Faq from "./components/Faq";
+import StartProject from "./components/StartProject";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -17,20 +20,19 @@ export default function App() {
       <Intro />
       <OSBar />
       <FloatingNav />
-
+      <Availability floating />
       <main>
         <Hero />
-        <Certification />
-        <About />
-        <PacmanDivider />
+        <SocialProof />
         <Services />
         <Projects />
-                <PacmanDivider />
-
+        <About />
         <Process />
-        <Contact />
+        <Reviews />
+        <Packages />
+        <Faq />
+        <StartProject />
       </main>
-
       <Footer />
     </>
   );

@@ -6,7 +6,7 @@ export const packagesIntro = {
 export const packageCategories = [
   {
     n: "01", name: "BRAND IDENTITY",
-    description: "Visual identities built to make brands recognizable, consistent and distinctly theirs.", color: "var(--ticket-green)",
+    description: "Visual identities built to make brands recognizable & consistent.", color: "var(--ticket-green)",
     packages: [
       { n: "01", name: "Brand Essentials", price: "PKR 25,000", tag: "A complete visual starting point for a new brand.", items: ["Primary logo design", "2 alternate logo variations", "Brand color palette", "Typography selection", "Logo variations for light and dark backgrounds", "Social media profile picture", "Brand guidelines sheet (PDF)", "Final files in SVG, PNG, JPG and PDF"] },
       { n: "02", name: "Brand Essentials + Print", price: "PKR 40,000", tag: "For businesses that need their identity ready for both digital and physical use.", items: ["Everything included in Brand Essentials", "Business card design (front and back)", "Letterhead design", "Envelope design", "Email signature", "Print-ready files with bleed and trim marks", "3D mockups of selected stationery"], note: "Printing and production costs are not included. Two revision rounds per design stage." },

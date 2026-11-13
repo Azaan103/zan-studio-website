@@ -3,7 +3,7 @@
 // Manual on purpose: nothing is calculated or connected to a calendar.
 // ============================================================
 export const availability = {
-  status: "accepting",
+  status: "limited",
   message: "",
 };
 

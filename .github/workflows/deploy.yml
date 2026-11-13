@@ -37,6 +37,11 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          VITE_FORM_PROVIDER: ${{ vars.VITE_FORM_PROVIDER }}
+          VITE_WEB3FORMS_KEY: ${{ vars.VITE_WEB3FORMS_KEY }}
+          VITE_FORMSPREE_ID: ${{ vars.VITE_FORMSPREE_ID }}
+          VITE_FORM_ENDPOINT: ${{ vars.VITE_FORM_ENDPOINT }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

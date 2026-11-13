@@ -24,7 +24,7 @@ export const nav = [
 export const hero = {
   badge: "Karachi · Est. 2026",
   headline: ["YOUR BRAND", "COULD BE", "COOLER."],
-  sub: "ZAN is an independent design & digital studio creating brands, digital experiences and visual systems that people actually remember.",
+  sub: "Your business deserves a brand that reflects its value and a digital presence that works as hard as you do.",
   primary: { label: "View Work →", href: "#work" },
   secondary: { label: "Start a Project →", href: "#start" },
   // Tiny arcade details around the headline (purely decorative)
@@ -44,7 +44,7 @@ export const services = {
   ],
 };
 
-export const work = { badge: "Selected work", title: "SELECTED WORK", copy: "A few projects worth showing." };
+export const work = { badge: "Selected work", title: "SELECTED WORK", copy: "What We've Delivered" };
 
 export const process = {
   badge: "How ZAN works",
@@ -59,9 +59,9 @@ export const process = {
 
 export const about = {
   badge: "About ZAN",
-  lead: "ZAN Studio is an independent design & digital studio based in Karachi, Pakistan, founded and run by Azaan Rahim.",
-  body: "We work across brand identity, UI/UX, digital experiences and visual communication — helping brands turn ideas into something people can recognize, use and remember.",
-  motto: ["Small by design.", "Involved from idea to execution."],
+  lead: "ZAN STUDIO is a digital design  studio based in Karachi, Pakistan, founded by Azaan Rahim.",
+  body: "We create brand identities, websites, and digital experiences that bring businesses closer to the people they want to reach.",
+  motto: ["Good design should do more than look good. It should make your business easier to recognize, understand, and trust."],
   person: { name: "Azaan Rahim", role: "Founder & Designer", photo: "/images/hero/Azaan.jpeg" },
 
 };
@@ -100,7 +100,7 @@ export const socialProof = {
 // Replace or add approved client quotes here. Keep this list data-only so the UI never needs editing.
 export const reviews = [
   {
-    quote: "Working with ZAN Studio made it easy to turn the OnScene brand into something people could actually see, interact with, and remember. From our business cards and stall backdrop to the standee, QR holder, and app store visuals, every piece felt connected.",
+    quote: "ZAN STUDIO understood our vision and brought OnScene to life across every touchpoint from business cards and event branding to our QR holder and app store screenshots. Everything felt consistent, modern, energetic, and unmistakably OnScene. We loved how it all came together.",
     name: "OnScene",
     role: "Client",
     company: "OnScene",
