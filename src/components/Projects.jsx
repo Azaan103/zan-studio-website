@@ -140,10 +140,10 @@ export default function Projects() {
       </div>
 
       <div className="container featured-work__footer">
-        <div className="featured-work__hint">
+        {/* <div className="featured-work__hint">
           <span className="pixel">IMAGES + VIDEO</span>
           <span>Add, reorder, or change image/video media in <code>src/data/projects.js</code>.</span>
-        </div>
+        </div> */}
         <a className="wk-link" href={projectsCta.href}>{projectsCta.cta}</a>
       </div>
 
