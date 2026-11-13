@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const sampleNotes = [
-  { id: "note-01", quote: ".< , very chat pati and tea (T_T) memories best of luck for everything may your clients bother you less for designs", name: "Community Member", role: "Community", company: "GDG-DSU", project: "Designer", tone: "pink" },
+  { id: "note-01", quote: ".< , very chatpati and tea (T_T) memories best of luck for everything may your clients bother you less for designs", name: "Community Member", role: "Community", company: "GDG-DSU", project: "Designer", tone: "pink" },
   { id: "note-02", quote: "ZAN STUDIO understood our vision and brought OnScene to life across every touchpoint from business cards and event branding to our QR holder and app store screenshots. Everything felt consistent, modern, energetic, and unmistakably OnScene. We loved how it all came together.", name: "Muhammad Samee", role: "Founder", company: "OnScene", project: "Brand Design · Print", tone: "pink" },
   { id: "note-03", quote: "We really liked the UI concept ZAN STUDIO created for Kaqaz Qalam. We wanted something playful and funky that matched our stationery and toys, and the design captured that really well. It feels fun, colourful, and true to what we had in mind.", name: "Hussain", role: "Web Developer", company: "Kagaz Qalam", project: "UI-UX Design", tone: "green" },
   { id: "note-04", quote: "We’re really happy with the card ZAN STUDIO designed for us. They understood what we wanted and made it look clean and professional. We’re also looking forward to working with them on our website and other designs.", name: "Rahim Rajab Ali", role: "Director", company: "Al Zehra Diagnostic Center", project: "Brand Design · Print", tone: "cream" },
@@ -28,7 +28,7 @@ export default function Reviews() {
         <motion.div className="sec-head sec-head--ink" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <span className="badge reviews__badge">client notes</span>
           <h2 className="sec-title">WHAT PEOPLE SAY</h2>
-          <p className="sec-copy">A little space for the good words. Sample notes for now — swap in real, approved feedback when ready.</p>
+          <p className="sec-copy">A little space for the good words. Sample notes for now swap in real, approved feedback when ready.</p>
         </motion.div>
 
         <div className="reviews__slideshow">
@@ -42,10 +42,10 @@ export default function Reviews() {
               <footer><div><strong>{active.name}</strong><span>{active.role} · {active.company}</span></div><span className="review-card__project">{active.project}</span></footer>
             </motion.article>
           </AnimatePresence>
-          <p className="reviews__auto-label" aria-live="polite">AUTOMATICALLY ROTATING NOTES · {String(index + 1).padStart(2, "0")} / 05</p>
+          <p className="reviews__auto-label" aria-live="polite">{String(index + 1).padStart(2, "0")} / 05</p>
         </div>
         </div>
-        <p className="reviews__admin-note">Replace the sample notes in <code>src/components/Reviews.jsx</code> with approved client feedback.</p>
+        {/* <p className="reviews__admin-note">Replace the sample notes in <code>src/components/Reviews.jsx</code> with approved client feedback.</p> */}
       
     </section>
 

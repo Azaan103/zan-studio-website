@@ -1784,7 +1784,7 @@ section[id] { scroll-margin-top: 36px; }
 .review-card blockquote {
   margin: 24px 0;
   font-family: var(--font-display);
-  font-size: clamp(17px, 2vw, 23px);
+  font-size: clamp(17px, 2vw, 12px);
   line-height: 1.35;
   font-weight: 600;
 }
