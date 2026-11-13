@@ -1428,7 +1428,24 @@ section[id] { scroll-margin-top: 36px; }
 .mi__link:hover .mi__img { transform: scale(1.04); }
 .wk-flag { position: absolute; top: 14px; left: 14px; z-index: 2; background: var(--ticket-orange); font-size: 12px; padding: 8px 14px; text-transform: uppercase; letter-spacing: .1em; }
 .wk-points { font-size: 13px; line-height: 1.6; opacity: .75; max-width: 72ch; }
-.wk-link { align-self: flex-start; font-family: var(--font-display); font-weight: 700; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; border-bottom: 2px solid var(--blue); padding-bottom: 2px; transition: transform .2s ease; }
+.wk-link {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+
+  border-bottom: 2px solid var(--blue);
+  padding: 12px 0;
+
+  transition: transform .2s ease;
+}
 .wk-link:hover { transform: translateX(4px); }
 .wk-cta { align-self: stretch; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px; padding: clamp(24px, 4vw, 44px); background: var(--black); color: var(--white); border: 2px solid var(--black); box-shadow: 6px 6px 0 var(--blue); min-height: 220px; }
 .wk-cta__t { font-size: clamp(36px, 5vw, 64px); line-height: .95; }
@@ -2241,4 +2258,700 @@ section[id] { scroll-margin-top: 36px; }
   .media-lightbox__panel { width: 100%; height: 92vh; max-height: 92vh; padding: 12px; }
   .media-lightbox__meta { align-items: flex-start; flex-direction: column; gap: 10px; }
   .start-contact__item { padding: 16px 0; }
+}
+/* ============================================================
+   ZAN STUDIO — RESPONSIVE OVERFLOW & DEVICE REFINEMENT
+   Paste at the VERY END of the stylesheet.
+   ============================================================ */
+
+/* ---------- Global responsive safety ---------- */
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+img,
+video,
+svg,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  max-width: 100%;
+  min-width: 0;
+}
+
+section,
+header,
+footer,
+main,
+article,
+div {
+  min-width: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+button,
+li {
+  overflow-wrap: break-word;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+/* ---------- Large desktop screens ---------- */
+
+@media (min-width: 1440px) {
+  :root {
+    --edge: clamp(72px, 7vw, 120px);
+  }
+
+  .hero__inner {
+    padding-top: clamp(130px, 12vw, 180px);
+    padding-bottom: 110px;
+  }
+
+  .hero__grid {
+    gap: clamp(60px, 7vw, 110px);
+  }
+
+  .polaroid {
+    width: min(440px, 35vw);
+  }
+
+  .work__grid {
+    gap: 26px;
+  }
+
+  .reviews__grid {
+    gap: 24px;
+  }
+}
+
+/* ---------- Standard laptops ---------- */
+
+@media (min-width: 981px) and (max-width: 1200px) {
+  :root {
+    --edge: 42px;
+  }
+
+  .hero__grid {
+    gap: 34px;
+  }
+
+  .hero__title {
+    font-size: clamp(58px, 7vw, 92px);
+  }
+
+  .work__grid {
+    gap: 16px;
+  }
+
+  .services__row {
+    grid-template-columns: 70px 1fr 1.1fr;
+    gap: 12px 18px;
+  }
+}
+
+/* ---------- Tablets and smaller laptops ---------- */
+
+@media (max-width: 980px) {
+  :root {
+    --edge: clamp(24px, 5vw, 42px);
+  }
+
+  .hero__grid,
+  .cert__grid,
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__grid {
+    gap: 48px;
+  }
+
+  .hero__frame {
+    width: 100%;
+    justify-self: center;
+  }
+
+  .hero__title {
+    font-size: clamp(54px, 10vw, 100px);
+  }
+
+  .polaroid {
+    width: min(380px, 75vw);
+    margin: 0 auto;
+  }
+
+  .cert__frame {
+    width: min(620px, 100%);
+  }
+
+  .about__note {
+    width: min(420px, 100%);
+    justify-self: start;
+  }
+
+  .work__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: none;
+  }
+
+  .work__card:nth-child(n) {
+    grid-area: auto;
+  }
+
+  .work__card--lg .work__frame,
+  .work__card--md .work__frame,
+  .work__card--sm .work__frame {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* ---------- Tablets portrait ---------- */
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .hero__inner {
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
+
+  .hero__statement {
+    max-width: 34ch;
+  }
+
+  .hero__sub {
+    max-width: 52ch;
+  }
+
+  .services__row {
+    grid-template-columns: 55px 1fr;
+    padding: 22px 12px;
+  }
+
+  .services__row-copy {
+    grid-column: 2;
+  }
+
+  .reviews__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .review-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .pk-terms ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ---------- All phones ---------- */
+
+@media (max-width: 640px) {
+  :root {
+    --edge: 20px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .os-bar {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+
+  .os-bar__dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .fnav {
+    top: 42px;
+    left: 12px;
+    right: 12px;
+    padding: 5px 7px;
+  }
+
+  .fnav__logo {
+    font-size: 16px;
+    padding: 9px 13px;
+  }
+
+  .fnav__toggle {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero {
+    padding-top: 30px;
+  }
+
+  .hero__inner {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .hero__grid {
+    gap: 38px;
+  }
+
+  .hero__title {
+    font-size: clamp(48px, 12vw, 76px);
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+  }
+
+  .hero__statement {
+    font-size: clamp(18px, 5vw, 23px);
+    margin-top: 20px;
+  }
+
+  .hero__sub {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .hero__ctas {
+    gap: 12px;
+    margin-top: 26px;
+  }
+
+  .hero__ctas .btn {
+    justify-content: center;
+    min-height: 48px;
+    padding: 13px 18px;
+    font-size: 13px;
+  }
+
+  .polaroid {
+    width: min(330px, 82vw);
+    padding: 10px 10px 38px;
+  }
+
+  .polaroid__caption {
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 12px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 7px 12px;
+    letter-spacing: 0.1em;
+  }
+
+  .work__head {
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .work__title,
+  .social-proof__head h2 {
+    font-size: clamp(28px, 8vw, 44px);
+  }
+
+  .work__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .work__card:nth-child(n) {
+    grid-area: auto;
+  }
+
+  .work__card--lg .work__frame,
+  .work__card--md .work__frame,
+  .work__card--sm .work__frame {
+    aspect-ratio: 4 / 3;
+  }
+
+  .work__meta {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .work__name {
+    font-size: 16px;
+  }
+
+  .services__head {
+    margin-bottom: 28px;
+  }
+
+  .services__row {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 8px 12px;
+    padding: 18px 4px;
+  }
+
+  .services__row-title {
+    font-size: clamp(17px, 5vw, 22px);
+  }
+
+  .services__row-copy {
+    grid-column: 2;
+    font-size: 13px;
+  }
+
+  .about__lead {
+    font-size: clamp(20px, 5.5vw, 28px);
+  }
+
+  .about__body,
+  .cert__copy {
+    font-size: 14px;
+  }
+
+  .about__note {
+    width: 100%;
+  }
+
+  .reviews__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .review-card:last-child {
+    grid-column: auto;
+  }
+
+  .review-card {
+    min-height: 230px;
+  }
+
+  .media-lightbox {
+    padding: 10px;
+  }
+
+  .media-lightbox__panel {
+    padding: 12px;
+    max-height: 92dvh;
+    overflow-y: auto;
+  }
+
+  .media-lightbox__media {
+    min-height: 180px;
+  }
+
+  .media-lightbox__close {
+    width: 38px;
+    height: 38px;
+    top: 8px;
+    right: 8px;
+  }
+
+  .media-lightbox__meta {
+    gap: 10px;
+  }
+
+  .pk-terms {
+    padding: 22px 16px;
+    margin-top: 42px;
+  }
+
+  .pk-terms ul {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pk-terms li {
+    padding: 16px;
+    font-size: 13px;
+  }
+
+  .btn {
+    min-height: 46px;
+    justify-content: center;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
+
+/* ---------- Small phones ---------- */
+
+@media (max-width: 400px) {
+  :root {
+    --edge: 16px;
+  }
+
+  .hero__inner {
+    padding-top: 90px;
+    padding-bottom: 48px;
+  }
+
+  .hero__title {
+    font-size: clamp(43px, 11.5vw, 58px);
+  }
+
+  .hero__badge {
+    margin-bottom: 16px;
+  }
+
+  .hero__ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__ctas .btn {
+    width: 100%;
+  }
+
+  .polaroid {
+    width: min(290px, 84vw);
+  }
+
+  .fnav {
+    left: 10px;
+    right: 10px;
+  }
+
+  .work__grid {
+    gap: 20px;
+  }
+
+  .ticket {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+
+  .media-lightbox__media {
+    min-height: 150px;
+  }
+
+  .os-bar {
+    font-size: 8px;
+    letter-spacing: 0.07em;
+  }
+}
+
+/* ---------- Very small phones ---------- */
+
+@media (max-width: 340px) {
+  :root {
+    --edge: 14px;
+  }
+
+  .hero__title {
+    font-size: 42px;
+  }
+
+  .hero__statement {
+    font-size: 17px;
+  }
+
+  .badge {
+    font-size: 9px;
+    gap: 5px;
+    padding: 6px 9px;
+  }
+
+  .fnav__logo {
+    font-size: 14px;
+  }
+
+  .fnav__toggle {
+    width: 34px;
+    height: 34px;
+  }
+
+  .work__title {
+    font-size: 27px;
+  }
+}
+
+/* ---------- Landscape phones ---------- */
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero__inner {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 24px;
+  }
+
+  .hero__title {
+    font-size: clamp(42px, 7vw, 70px);
+  }
+
+  .polaroid {
+    width: min(250px, 40vw);
+  }
+
+  .hero__tag {
+    display: none;
+  }
+
+  .intro {
+    gap: 10px;
+  }
+
+  .intro__mark {
+    font-size: 52px;
+  }
+}
+
+/* ---------- Touchscreen devices ---------- */
+
+@media (hover: none) and (pointer: coarse) {
+  .work__overlay {
+    opacity: 1;
+  }
+
+  .work__card:hover .work__img,
+  .work__card:hover .work__meta,
+  .btn:hover,
+  .about__note:hover {
+    transform: none;
+  }
+
+  .services__row,
+  .fnav__link,
+  .fnav__mobile-link,
+  .btn {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .fnav__mobile-link,
+  .fnav__toggle,
+  .btn {
+    min-height: 44px;
+  }
+}
+
+/* ---------- Reduced motion accessibility ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================================
+   ZAN STUDIO — NAVBAR RESPONSIVE FIX
+   Keep navbar in one horizontal row on every screen.
+   ============================================================ */
+
+.fnav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  white-space: nowrap;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  gap: 4px;
+}
+
+.fnav__logo {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.fnav__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 0 1 auto;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.fnav__link {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.fnav__toggle {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.fnav__mobile {
+  white-space: normal;
+  z-index: 100;
+}
+
+/* Tablets and phones */
+@media (max-width: 980px) {
+  .fnav {
+    left: 12px;
+    right: 12px;
+    transform: none;
+    width: auto;
+    max-width: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .fnav__links {
+    display: none;
+  }
+
+  .fnav__toggle {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+  .fnav {
+    left: 10px;
+    right: 10px;
+    padding: 5px 7px;
+  }
+
+  .fnav__logo {
+    font-size: 14px;
+    padding: 8px 11px;
+  }
+
+  .fnav__toggle {
+    width: 34px;
+    height: 34px;
+  }
 }
